@@ -1,6 +1,6 @@
 ## 53. Maximum Subarray
 
-Dado um array de inteiros `nums`, encontre a submatriz (subarray) com a maior soma e retorne essa soma.
+Dado um array de inteiros **nums**, encontre a submatriz (subarray) com a maior soma e retorne essa soma.
 
 ### Exemplo 1:
 
@@ -38,4 +38,4 @@ Se você já descobriu uma solução O(n), tente implementar outra solução usa
 ## Solução
 [https://leetcode.com/problems/maximum-subarray/](https://leetcode.com/problems/maximum-subarray/)
 
-![solucao_Klyssmann](/assets/53.PNG)
+![solucao_Klyssmann](../assets/53.PNG)

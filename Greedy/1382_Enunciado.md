@@ -6,7 +6,7 @@ Uma árvore binária de busca é considerada balanceada se a diferença de profu
 
 ### Exemplo 1:
 
-![solucao_Klyssmann](/assets/balance1-tree.jpg)
+![solucao_Klyssmann](../assets/balance1-tree.jpg)
 
 Entrada: root = [1,null,2,null,3,null,4,null,null]
 Saída: [2,1,3,null,null,null,4]
@@ -14,7 +14,7 @@ Explicação: Esta não é a única resposta correta, [3,1,4,null,2] também é 
 
 ### Exemplo 2:
 
-![solucao_Klyssmann](/assets/balanced2-tree.jpg)
+![solucao_Klyssmann](../assets/balanced2-tree.jpg)
 
 Entrada: root = [2,1,3]
 Saída: [2,1,3]
@@ -28,4 +28,4 @@ O número de nós na árvore está no intervalo [1, 10^4].
 ## Solução
 [https://leetcode.com/problems/balance-a-binary-search-tree/description/](https://leetcode.com/problems/balance-a-binary-search-tree/description/)
 
-![solucao_Klyssmann](/assets/1382.PNG)
+![solucao_Klyssmann](../assets/1382.PNG)

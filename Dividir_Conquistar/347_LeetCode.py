@@ -2,48 +2,26 @@ from typing import List
 
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        # conta as frequências dos elementos
-        def contar_frequencias(nums):
+        def dividir(nums, left, right, k):
+            # Contar as frequências dos elementos na sublista
             frequencias = {}
-            for num in nums:
-                if num in frequencias:
-                    frequencias[num] += 1
+            for i in range(left, right + 1):
+                if nums[i] in frequencias:
+                    frequencias[nums[i]] += 1
                 else:
-                    frequencias[num] = 1
-            return frequencias
+                    frequencias[nums[i]] = 1
+            
+            # Ordenar os elementos pela frequência em ordem decrescente
+            sorted_elements = sorted(frequencias, key=frequencias.get, reverse=True)
+            
+            # Retornar os k elementos mais frequentes
+            return sorted_elements[:k]
         
-        # Combina as frequências contadas nas duas metades
-        def combinar_frequencias(freq_esq, freq_dir):
-            for num, freq in freq_dir.items():
-                if num in freq_esq:
-                    freq_esq[num] += freq
-                else:
-                    freq_esq[num] = freq
-            return freq_esq
-        
-        # Caso base: se o array tem apenas um elemento, retornar esse elemento
-        if len(nums) == 1:
-            return nums
-        
-        # Divide o array em duas metades
-        meio = len(nums) // 2
-        nums_esq = nums[:meio]
-        nums_dir = nums[meio:]
-        
-        # Recursivo para contar as frequências nas duas metades
-        freq_esq = contar_frequencias(nums_esq)
-        freq_dir = contar_frequencias(nums_dir)
-        
-        # Combina as frequências das duas metades
-        freq_total = combinar_frequencias(freq_esq, freq_dir)
-        
-        # PSelecionar os elementos mais frequentes
-        k_elementos = sorted(freq_total, key=freq_total.get, reverse=True)[:k]
-        
-        return k_elementos
+        # Chamar a função dividir recursivamente para obter os k elementos mais frequentes
+        return dividir(nums, 0, len(nums) - 1, k)
 
 if __name__ == "__main__":
-    # Exemplo de uso:
+
     solucao = Solution()
     nums = [1, 1, 1, 2, 2, 3]
     k = 2

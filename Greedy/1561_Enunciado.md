@@ -14,10 +14,15 @@ Retorne o número máximo de moedas que você pode obter.
 ### Exemplo 1:
 
 Entrada: piles = [2,4,1,2,7,8]
+
 Saída: 9
+
 Explicação: Escolha o triplo (2, 7, 8), Alice escolhe a pilha com 8 moedas, você escolhe a pilha com 7 moedas e Bob fica com a última pilha.
+
 Escolha o triplo (1, 2, 4), Alice escolhe a pilha com 4 moedas, você escolhe a pilha com 2 moedas e Bob fica com a última pilha.
+
 O número máximo de moedas que você pode ter é: 7 + 2 = 9.
+
 Por outro lado, se escolhermos esta disposição (1, 2, 8), (2, 4, 7) você só obtém 2 + 4 = 6 moedas, o que não é ótimo.
 
 ### Exemplo 2:
@@ -40,4 +45,4 @@ piles.length % 3 == 0
 ## Solução
 [https://leetcode.com/problems/maximum-number-of-coins-you-can-get/](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/)
 
-![solucao_Klyssmann](/assets/1561.PNG)
+![solucao_Klyssmann](../assets/1561.PNG)

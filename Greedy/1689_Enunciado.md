@@ -5,23 +5,29 @@ Dado uma string n que representa um inteiro decimal positivo, retorne o número 
 
 ### Exemplo 1:
 Entrada: n = "32"
+
 Saída: 3
+
 Explicação: 10 + 11 + 11 = 32
 
 ### Exemplo 2:
 Entrada: n = "82734"
+
 Saída: 8
 
 ### Exemplo 3:
 Entrada: n = "27346209830709182346"
+
 Saída: 9
 
 ### Restrições:
 1 <= n.length <= 10^5
+
 n consiste apenas de dígitos.
+
 n não contém zeros à esquerda e representa um inteiro positivo.
 
 ## Solução
 [https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/)
 
-![solucao_Klyssmann](/assets/1689.PNG)
+![solucao_Klyssmann](../assets/1689.PNG)

@@ -10,7 +10,7 @@ Retorne a soma total máxima pela qual a altura dos prédios pode ser aumentada 
 
 ### Exemplo 1:
 
-![solucao_Klyssmann](/assets/807-ex1.PNG)
+![solucao_Klyssmann](../assets/807-ex1.png)
 
 
 Entrada: grid = [[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]
@@ -39,4 +39,4 @@ n == grid[r].length
 ## Solução
 [https://leetcode.com/problems/max-increase-to-keep-city-skyline/description/](https://leetcode.com/problems/max-increase-to-keep-city-skyline/description/)
 
-![solucao_Klyssmann](/assets/807.PNG)
+![solucao_Klyssmann](../assets/807.PNG)

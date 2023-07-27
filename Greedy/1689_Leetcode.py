@@ -9,7 +9,7 @@ class Solution:
     
 def main():
 
-    n = "82734"
+    n = "28734"
 
     solution = Solution()
 

@@ -29,3 +29,14 @@ class Solution:
             return result
         
         return generate(n)
+
+def main():
+    n = 3
+    solution = Solution()
+    combinations = solution.generateParenthesis(n)
+    print(f"Combinações para n = {n}:")
+    for comb in combinations:
+        print(comb)
+
+if __name__ == "__main__":
+    main()
